@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "mars" ;
+    src: url('../fonts/Mars-Project.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: "star" ;
+    src: url('../fonts/STAR7.ttf') format(truetype);
+    font-weight: normal;
+}
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-corpo: "star", sans-serif, "cursive";
+    --font-titulo: "mars",  cursive;
+
+    --cor01: #6F8ABF;
+    --cor02: #3238A6;
+    --cor03: #0C1D40;
+    --cor04: #011140;
+    --cor05: #011126;
+}
+
+body {
+    background-color: var(--cor05);
+    color: white;
+}
+
+header {
+    background-image: url("../imagens/imagem04.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;  
+    padding-bottom: 15vw;
+    padding-top: 10vw; 
+}
+
+header > h1 {
+    font-family: var(--font-titulo);
+    font-style: normal;
+    color: white;
+    background-color: #6f8abf6c;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 7vw;
+    border-radius: 15px;
+    text-shadow: 1px 5px 1px black;
+}
+
+header > p {
+    color: var(--cor05);
+    background-color: #f1f1f1;
+    display: inline;
+    font-size: 2.3vw;
+    padding: 1px 10px 3px 10px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: bold;
+}
+
+main {
+    font-family: var(--font-padrao);
+    font-weight: 200;
+    font-style: normal;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+main h2 {
+    font-family: var(--font-corpo);
+    text-align: center;
+    font-weight: normal;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.575);
+}
+
+main h3 {
+    background-color: #011126bd;
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 1.5em;
+    padding: 5px 20px 5px 25px;
+    border-radius: 30px;
+    display: inline;
+    border: 3px solid black;
+
+}
+
+main > article {
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.2em;
+    line-height: 2.5em;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    background-image: url('../imagens/test.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main > article > p {
+    background-color: #0111269a;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    border-radius: 30px;
+}
+
+main > p {
+
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main > p > a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: var(--cor01);
+    color: var(--cor05);
+}
+
+main img {
+    width: 90%;
+    padding-bottom: 70px;
+
+}
+
+main img.pequena {
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.514);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+}
+
+footer > p:hover {
+    background-color: #6F8ABF;
+    color: #011126;
+    border-radius: 50px;
+    padding: 6px;
+    display: inline;
+    text-decoration: underline;
+    font-weight: bold;
+}
